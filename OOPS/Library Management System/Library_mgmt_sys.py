@@ -21,6 +21,7 @@ class Library:
     def display_books(self):
         for book in self.books:
             print(book)
+        print("\n")    
 class Member:
     def __init__(self,name,memeber_id,borrowed_books=None):
         self.name=name
@@ -36,6 +37,8 @@ class Member:
     def return_book(self,Book):
         if Book in self.borrowed_books:
             self.borrowed_books.remove(Book)
+            Book.available=True
+            return f"{Book.title} returned successfully"
         else:
             return "Book not borrowed by member"
         
@@ -50,7 +53,8 @@ library.add_book(book2)
 library.add_book(book3)
 library.add_book(book4)
 library.add_book(book5)
-#library.display_books()
 memeber1=Member("Shalini","1")
 memeber1.borrow_book(book5)
+library.display_books()
+memeber1.return_book(book5)
 library.display_books()
