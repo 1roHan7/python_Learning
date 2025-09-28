@@ -1,0 +1,5 @@
+2025-09-28 19:20:49,205 -DEBUG - This is debug message vallah - root - MainThread
+2025-09-28 19:20:49,205 -INFO - This is info message - root - MainThread
+2025-09-28 19:20:49,205 -WARNING - This is warning message - root - MainThread
+2025-09-28 19:20:49,205 -ERROR - This is error message - root - MainThread
+2025-09-28 19:20:49,206 -CRITICAL - This is critical message - root - MainThread
