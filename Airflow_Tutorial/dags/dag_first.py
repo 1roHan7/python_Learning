@@ -9,8 +9,6 @@ default_args = {
     'retry_delay': timedelta(minutes=2)
 }
 
-def greet():
-    print("Hello World")
 
 with DAG(
     dag_id='dag_ELTpipeline_v1',
